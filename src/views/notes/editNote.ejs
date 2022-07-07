@@ -5,9 +5,7 @@
     </div>
     <div class="card-body">
       <form action="/notes/edit-note/<%= note.id %>?_method=PUT" method="POST">
-        <!--Aquí usamos el metodo put del modulo override -->
         <input type="hidden" name="_method" value="PUT">
-        <!--Ocupamos poner el input hidden para que funcione con el nombre _method que declaramos en index.js -->
         <div class="form-group">
           <input type="text" name="title" class="form-control" placeholder="Title" value="<%= note.title %>">
         </div>
